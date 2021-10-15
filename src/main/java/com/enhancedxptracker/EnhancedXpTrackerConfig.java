@@ -211,4 +211,26 @@ public interface EnhancedXpTrackerConfig extends Config
 	{
 		return false;
 	}
+
+	@ConfigItem(
+		position = 15,
+		keyName = "showStatsPanel",
+		name = "Show stats panel",
+		description = "Configures whether a stats panel is displayed in the XpTracker"
+	)
+	default boolean showStatsPanel()
+	{
+		return true;
+	}
+
+	@ConfigItem(
+			position = 16,
+			keyName = "virtualLevelStatsPanel",
+			name = "Virtual levels in stats panel",
+			description = "Configures whether virtual levels are shown in the stats panel"
+	)
+	default boolean virtualLevelStatsPanel()
+	{
+		return true;
+	}
 }
